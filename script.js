@@ -56,9 +56,3 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   });
 }
 
-<div class="decoracion-fotos">
-  <img src="fotos/foto1.jpg" class="df df1">
-  <img src="fotos/foto2.jpg" class="df df2">
-  <img src="fotos/foto3.jpg" class="df df3">
-  <img src="fotos/foto4.jpg" class="df df4">
-</div>
