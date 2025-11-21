@@ -216,7 +216,7 @@ a:focus{outline:3px solid rgba(155,207,155,0.25);outline-offset:3px}
 button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 
 /* ---------- End of file ---------- */
-/* FOTOS DECORATIVAS FLOTANTES — MINI, DISPERSAS, TRANSPARENTES */
+/* FOTOS DECORATIVAS FLOTANTES — PEQUEÑAS, DISPERSAS, TRANSPARENTES */
 .decoracion-fotos {
   position: absolute;
   top: 0;
@@ -228,9 +228,9 @@ button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 
 .df {
   position: absolute;
-  width: 60px;        /* MUY PEQUEÑAS */
-  opacity: 0.15;      /* MUY TRANSPARENTES */
-  border-radius: 10px;
+  width: 85px;        /* MUY PEQUEÑAS */
+  opacity: 0.50;      /* MUY TRANSPARENTES */
+  border-radius: 0px;
   object-fit: cover;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
