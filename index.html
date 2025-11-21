@@ -1,112 +1,134 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ARVO — Portafolio Creativo</title>
-  <meta name="description" content="ARVO — Agencia creativa: fotografía, video y estrategias de contenido.">
+  <meta name="description" content="ARVO — Fotografía, video y contenido creativo con una estética cálida y profesional.">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-inner">
       <h1 class="logo">ARVO</h1>
+
+      <!-- Menú normal -->
       <nav class="nav">
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Quiénes somos</a>
+        <a href="#hacemos">Qué hacemos</a>
+        <a href="#nuestros">Nuestros</a>
         <a href="#servicios">Servicios</a>
         <a href="#videos">Videos</a>
         <a href="#fotos">Fotos</a>
         <a href="#contacto">Contacto</a>
       </nav>
+
+      <!-- Botón menú móvil -->
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </div>
+
+    <!-- Menú móvil -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+      <a href="#nosotros" onclick="toggleMenu()">Quiénes somos</a>
+      <a href="#hacemos" onclick="toggleMenu()">Qué hacemos</a>
+      <a href="#nuestros" onclick="toggleMenu()">Nuestros</a>
+      <a href="#servicios" onclick="toggleMenu()">Servicios</a>
+      <a href="#videos" onclick="toggleMenu()">Videos</a>
+      <a href="#fotos" onclick="toggleMenu()">Fotos</a>
+      <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="wrap hero-inner">
-        <h2>Creamos contenido con propósito</h2>
-        <p>Impulsamos marcas y emprendedores mediante fotografía, video y estrategia visual.</p>
-        <a class="btn" href="#servicios">Ver servicios</a>
-      </div>
-    </section>
+  <!-- HERO -->
+  <section id="inicio" class="hero fade-in">
+    <div class="wrap hero-inner">
+      <h2>Creamos contenido con propósito</h2>
+      <p>Fotografía, video e identidad visual desde una estética cálida, natural y auténtica.</p>
+    </div>
+  </section>
 
-    <section id="nosotros" class="section">
-      <div class="wrap">
-        <h2>Quiénes somos</h2>
-        <p>Somos ARVO: una agencia y una plataforma. Producimos, conectamos e inspiramos a emprendedores para comunicar su esencia con autenticidad. Nacimos de la experiencia de migrantes con la convicción de que los negocios con propósito merecen ser vistos.</p>
-        <p>Puedes descargar nuestro portafolio completo (PDF): <a href="assets/Portafolio_ARVO.pdf" target="_blank" rel="noopener">Ver / Descargar PDF</a></p>
-      </div>
-    </section>
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="section fade-in">
+    <div class="wrap">
+      <h2>Quiénes somos</h2>
+      <p>Somos ARVO, una plataforma y agencia creativa construida para emprendedores que desean comunicar su esencia con intención y belleza.</p>
 
-    <section id="servicios" class="section alt">
-      <div class="wrap">
-        <h2>Servicios</h2>
-        <p>Ofrecemos paquetes y servicios pensados para acompañar desde la identidad hasta la producción y la gestión de contenido.</p>
-        <div class="cards">
-          <article class="card">
-            <h3>ARVO Identity</h3>
-            <p>Paleta de colores, logotipo, tipografía y guía visual para que tu marca comunique con intención.</p>
-          </article>
-          <article class="card">
-            <h3>ARVO Self</h3>
-            <p>Transformamos tu esencia en contenido audiovisual profesional que comunica quién eres y por qué lo haces.</p>
-          </article>
-          <article class="card">
-            <h3>Arvo Seed / Arvo Studio</h3>
-            <p>Sesiones de foto y video que transmiten la esencia del proyecto con una estética cuidada y cercana.</p>
-          </article>
-          <article class="card">
-            <h3>Arvo Flow</h3>
-            <p>Producción + estrategia + gestión para mantener tu marca activa y conectada con su comunidad.</p>
-          </article>
-          <article class="card">
-            <h3>Arvo Insight</h3>
-            <p>Auditoría de redes, definición de pilares y plan claro para potenciar tu presencia digital.</p>
-          </article>
-          <article class="card">
-            <h3>Arvo Bloom</h3>
-            <p>Formación personalizada, plantillas editables y una mini guía para crear contenido constante y de calidad.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <p>Descarga nuestro portafolio completo:  
+        <a href="assets/Portafolio_ARVO.pdf" target="_blank">Ver PDF</a>
+      </p>
+    </div>
+  </section>
 
-    <section id="videos" class="section">
-      <div class="wrap">
-        <h2>Videos</h2>
-        <p>Sube tus videos a la carpeta <code>/videos</code>. Recomendamos usar MP4 (H.264). Si prefieres, sube a YouTube y pega el embed.</p>
-        <div class="galeria-videos">
-          <video controls poster="assets/video1-thumb.jpg" width="420">
-            <source src="videos/video1.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-          </video>
-          <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+  <!-- QUÉ HACEMOS -->
+  <section id="hacemos" class="section alt fade-in">
+    <div class="wrap">
+      <h2>Qué hacemos</h2>
+      <p>Conectamos creatividad y estrategia para construir marcas con profundidad. No solo creamos contenido; narramos quién eres.</p>
+    </div>
+  </section>
 
-    <section id="fotos" class="section alt">
-      <div class="wrap">
-        <h2>Fotos</h2>
-        <p>Coloca tus imágenes optimizadas en la carpeta <code>/fotos</code>. Usa JPG o WebP y activa <code>loading="lazy"</code> para mejorar la carga.</p>
-        <div class="galeria-fotos">
-          <img src="fotos/foto1.jpg" alt="Proyecto 1 (reemplaza foto1.jpg)" loading="lazy">
-          <img src="fotos/foto2.jpg" alt="Proyecto 2 (reemplaza foto2.jpg)" loading="lazy">
-          <img src="fotos/foto3.jpg" alt="Proyecto 3 (reemplaza foto3.jpg)" loading="lazy">
-        </div>
-      </div>
-    </section>
+  <!-- NUESTROS -->
+  <section id="nuestros" class="section fade-in">
+    <div class="wrap">
+      <h2>Nuestros</h2>
+      <p>Desarrollamos proyectos creativos desde un enfoque orgánico, estético y emocional.</p>
+    </div>
+  </section>
 
-    <section id="contacto" class="section contacto">
-      <div class="wrap">
-        <h2>Contacto</h2>
-        <p>¿Quieres trabajar con nosotros? Escríbenos por WhatsApp y te responderemos lo antes posible.</p>
-        <a class="btn-wsp" href="https://wa.me/34663431446?text=Hola%20ARVO%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-        <p class="small">Teléfono: +34 663 43 14 46</p>
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section alt fade-in">
+    <div class="wrap">
+      <h2>Servicios</h2>
+
+      <div class="cards">
+        <article class="card"><h3>ARVO Identity</h3><p>Identidad visual y esencia de marca.</p></article>
+        <article class="card"><h3>ARVO Self</h3><p>Producción audiovisual personal.</p></article>
+        <article class="card"><h3>ARVO Seed / Studio</h3><p>Sesiones de foto y video.</p></article>
+        <article class="card"><h3>ARVO Flow</h3><p>Gestión de redes + contenido estratégico.</p></article>
+        <article class="card"><h3>ARVO Insight</h3><p>Auditoría estratégica de redes.</p></article>
+        <article class="card"><h3>ARVO Bloom</h3><p>Mentoría creativa y plantillas.</p></article>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="section fade-in">
+    <div class="wrap">
+      <h2>Videos</h2>
+      <div class="galeria-videos">
+        <video controls width="380">
+          <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTOS -->
+  <section id="fotos" class="section alt fade-in">
+    <div class="wrap">
+      <h2>Fotos</h2>
+      <div class="galeria-fotos">
+        <img src="fotos/foto1.jpg">
+        <img src="fotos/foto2.jpg">
+        <img src="fotos/foto3.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section fade-in">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <p>¿Quieres trabajar con nosotros? Escríbenos.</p>
+      <a class="btn-wsp" href="https://wa.me/34663431446?text=Hola%20ARVO" target="_blank">WhatsApp</a>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="wrap">
@@ -114,6 +136,7 @@
     </div>
   </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
