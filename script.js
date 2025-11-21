@@ -55,50 +55,10 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     el.style.animation = "none";
   });
 }
-/* FOTOS DECORATIVAS FLOTANTES */
-.decoracion-fotos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
 
-.df {
-  position: absolute;
-  width: 110px;
-  opacity: 0.35;
-  border-radius: 12px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.df:hover {
-  transform: scale(1.08);
-  opacity: 0.7;
-}
-
-.df1 {
-  top: 200px;
-  left: 5%;
-  transform: rotate(-6deg);
-}
-
-.df2 {
-  top: 550px;
-  right: 12%;
-  transform: rotate(5deg);
-}
-
-.df3 {
-  top: 950px;
-  left: 10%;
-  transform: rotate(7deg);
-}
-
-.df4 {
-  top: 1400px;
-  right: 7%;
-  transform: rotate(-4deg);
-}
+<div class="decoracion-fotos">
+  <img src="fotos/foto1.jpg" class="df df1">
+  <img src="fotos/foto2.jpg" class="df df2">
+  <img src="fotos/foto3.jpg" class="df df3">
+  <img src="fotos/foto4.jpg" class="df df4">
+</div>
