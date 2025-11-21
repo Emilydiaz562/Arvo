@@ -216,7 +216,7 @@ a:focus{outline:3px solid rgba(155,207,155,0.25);outline-offset:3px}
 button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 
 /* ---------- End of file ---------- */
-/* FOTOS DECORATIVAS FLOTANTES — PEQUEÑAS, DISPERSAS, TRANSPARENTES */
+/* FOTOS DECORATIVAS ELEGANTES — MEDIA TRANSPARENCIA + DISPERSAS */
 .decoracion-fotos {
   position: absolute;
   top: 0;
@@ -228,39 +228,28 @@ button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 
 .df {
   position: absolute;
-  width: 85px;        /* MUY PEQUEÑAS */
-  opacity: 0.50;      /* MUY TRANSPARENTES */
-  border-radius: 0px;
+  width: 140px;         /* tamaño más visible pero elegante */
+  opacity: 0.32;        /* transparencia estética */
+  border-radius: 14px;  /* más profesional, NO cuadrado */
   object-fit: cover;
+  filter: saturate(0.9) contrast(0.95);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .df:hover {
-  opacity: 0.35;
-  transform: scale(1.1);
+  opacity: 0.48;
+  transform: scale(1.04);
 }
 
-/* POSICIONES MUY DISPERSAS POR TODA LA PÁGINA */
-.df1 {
-  top: 300px;
-  left: 8%;
-  transform: rotate(-10deg);
-}
-
-.df2 {
-  top: 900px;
-  right: 12%;
-  transform: rotate(8deg);
-}
-
-.df3 {
-  top: 1600px;
-  left: 15%;
-  transform: rotate(-6deg);
-}
-
-.df4 {
-  top: 2300px;
-  right: 18%;
-  transform: rotate(7deg);
+/* POSICIONES dispersas — tres niveles de profundidad */
+.df1 { top: 250px;  left: 6%;   transform: rotate(-8deg); }
+.df2 { top: 1100px; right: 8%;  transform: rotate(6deg); }
+.df3 { top: 1900px; left: 14%;  transform: rotate(-5deg); }
+.df4 { top: 2800px; right: 10%; transform: rotate(7deg); }
+.highlight-earth {
+  color: var(--earth);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
