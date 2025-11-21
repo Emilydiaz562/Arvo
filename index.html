@@ -10,7 +10,13 @@
 </head>
 
 <body>
-
+<div class="fotos-decorativas">
+  <img src="fotos/foto1.jpg.jpeg" class="f deco1">
+  <img src="fotos/foto2.jpg.jpeg" class="f deco2">
+  <img src="fotos/foto3.jpg.jpeg" class="f deco3">
+  <img src="fotos/foto4.jpg.jpeg" class="f deco4">
+</div>
+  
   <!-- HEADER -->
   <header class="site-header">
     <div class="wrap header-inner">
@@ -201,6 +207,46 @@
   </footer>
 
   <script src="script.js"></script>
+  .fotos-decorativas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none; /* Las fotos no bloquean clics */
+}
+
+.f {
+  position: absolute;
+  width: 220px;
+  opacity: 0.25; /* Baja para que no molesten el texto */
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Posiciones dispersas en la página */
+.deco1 {
+  top: 150px;
+  left: 5%;
+  transform: rotate(-6deg);
+}
+
+.deco2 {
+  top: 450px;
+  right: 8%;
+  transform: rotate(4deg);
+}
+
+.deco3 {
+  top: 900px;
+  left: 12%;
+  transform: rotate(7deg);
+}
+
+.deco4 {
+  top: 1400px;
+  right: 10%;
+  transform: rotate(-3deg);
+}
 
 </body>
 </html>
