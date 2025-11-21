@@ -8,9 +8,9 @@
   --bg: #F7F1E8;        /* Beige principal */
   --muted: #E8DCC8;     /* Beige tierra suave (secciones) */
   --panel: #FFFFFF;     /* Paneles blancos */
-  --dark: #1B2A41;      /* Azul oscuro (texto "Qué hacemos") */
+  --blue: #1B2A41;      /* Azul oscuro (texto "Qué hacemos") */
   --accent: #9BCF9B;    /* Verde pastel ARVO (logo / botones) */
-  --earth: #D97A2B;     /* Naranja tierra (nuestros) */
+  --orange: #D97A2B;     /* Naranja tierra (nuestros) */
   --black: #000000;     /* Negro puro (quienes somos / servicios) */
   --shadow: rgba(27,42,65,0.06);
   --radius: 12px;
@@ -115,8 +115,8 @@ body{
 
 /* ---------- Títulos específicos (como pediste) ---------- */
 #nosotros h2{ color: var(--black); }   /* Quiénes somos -> negro */
-#hacemos h2{ color: var(--dark); }    /* Qué hacemos -> azul oscuro */
-#nuestros h2{ color: var(--earth); }  /* Nuestros -> naranja tierra */
+#hacemos h2{ color: var(--blue); }    /* Qué hacemos -> azul oscuro */
+#nuestros h2{ color: var(--orange); }  /* Nuestros -> naranja tierra */
 #servicios h2{ color: var(--black); } /* Servicios -> negro */
 
 /* ---------- Cards (Servicios) ---------- */
@@ -229,7 +229,7 @@ button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 .df {
   position: absolute;
   width: 140px;         /* tamaño más visible pero elegante */
-  opacity: 0.32;        /* transparencia estética */
+  opacity: 10;        /* transparencia estética */
   border-radius: 14px;  /* más profesional, NO cuadrado */
   object-fit: cover;
   filter: saturate(0.9) contrast(0.95);
@@ -237,15 +237,15 @@ button:focus{outline:3px solid rgba(27,42,65,0.12);outline-offset:2px}
 }
 
 .df:hover {
-  opacity: 0.48;
+  opacity: 0.90;
   transform: scale(1.04);
 }
 
 /* POSICIONES dispersas — tres niveles de profundidad */
-.df1 { top: 250px;  left: 6%;   transform: rotate(-8deg); }
-.df2 { top: 1100px; right: 8%;  transform: rotate(6deg); }
-.df3 { top: 1900px; left: 14%;  transform: rotate(-5deg); }
-.df4 { top: 2800px; right: 10%; transform: rotate(7deg); }
+.df1 { top: 250px;  left: 6% }
+.df2 { top: 1100px; right: 8% }
+.df3 { top: 1900px; left: 14% }
+.df4 { top: 2800px; right: 10% }
 .highlight-earth {
   color: var(--earth);
   font-weight: 800;
