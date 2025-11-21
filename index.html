@@ -10,11 +10,11 @@
 </head>
 
 <body>
-<div class="fotos-decorativas">
-  <img src="fotos/foto1.jpg.jpeg" class="f deco1">
-  <img src="fotos/foto2.jpg.jpeg" class="f deco2">
-  <img src="fotos/foto3.jpg.jpeg" class="f deco3">
-  <img src="fotos/foto4.jpg.jpeg" class="f deco4">
+<div class="decoracion-fotos">
+  <img src="fotos/foto1.jpg" class="df df1">
+  <img src="fotos/foto2.jpg" class="df df2">
+  <img src="fotos/foto3.jpg" class="df df3">
+  <img src="fotos/foto4.jpg" class="df df4">
 </div>
   
   <!-- HEADER -->
@@ -30,7 +30,7 @@
         <a href="#nuestros">Nuestros</a>
         <a href="#servicios">Servicios</a>
         <a href="#videos">Videos</a>
-        <a href="#fotos">Fotos</a>
+    
         <a href="#contacto">Contacto</a>
       </nav>
 
@@ -46,7 +46,6 @@
       <a href="#nuestros" onclick="toggleMenu()">Nuestros</a>
       <a href="#servicios" onclick="toggleMenu()">Servicios</a>
       <a href="#videos" onclick="toggleMenu()">Videos</a>
-      <a href="#fotos" onclick="toggleMenu()">Fotos</a>
       <a href="#contacto" onclick="toggleMenu()">Contacto</a>
     </nav>
   </header>
@@ -207,46 +206,51 @@
   </footer>
 
   <script src="script.js"></script>
-  .fotos-decorativas {
+  /* FOTOS DECORATIVAS FLOTANTES */
+.decoracion-fotos {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  pointer-events: none; /* Las fotos no bloquean clics */
+  pointer-events: none; /* NO bloquean botones */
+  z-index: 1;
 }
 
-.f {
+.df {
   position: absolute;
-  width: 220px;
-  opacity: 0.25; /* Baja para que no molesten el texto */
-  border-radius: 14px;
+  width: 110px;        /* tamaño más pequeño */
+  opacity: 0.35;       /* transparente, estético */
+  border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Posiciones dispersas en la página */
-.deco1 {
-  top: 150px;
+.df:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+}
+
+/* POSICIONES DISPERSAS */
+.df1 {
+  top: 200px;
   left: 5%;
   transform: rotate(-6deg);
 }
 
-.deco2 {
-  top: 450px;
-  right: 8%;
-  transform: rotate(4deg);
+.df2 {
+  top: 550px;
+  right: 12%;
+  transform: rotate(5deg);
 }
 
-.deco3 {
-  top: 900px;
-  left: 12%;
+.df3 {
+  top: 950px;
+  left: 10%;
   transform: rotate(7deg);
 }
 
-.deco4 {
+.df4 {
   top: 1400px;
-  right: 10%;
-  transform: rotate(-3deg);
+  right: 7%;
+  transform: rotate(-4deg);
 }
-
-</body>
-</html>
